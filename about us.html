@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Saint</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="konami.js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(53.5290008,-6.0929809),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.HYBRID
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  map.setTilt(45);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script></head>
+	<body>
+	<div id="wrapper">
+		<div id="header"><div id="logobox"><img id="toplogo" src="logo.psd" alt="HTML5 Icon"><img src="saint2.psd" alt="HTML5 Icon" id="toplogo2"></div>
+		<div id="nav">
+		<table>
+					<tr>
+						<th><div id="home" onclick="location.href='index.html';" style="cursor: pointer;">Home</div></th>
+						<th><div id="gallery" onclick="location.href='gallery.html';" style="cursor: pointer;">Gallery</div></th>
+						<th><div id="about" onclick="location.href='about us.html';" style="cursor: pointer;">About Me</div></th>
+						<th><div id="contact" onclick="location.href='contact us.html';" style="cursor: pointer;">Contact Me</div></th>
+					</tr>
+					</table>
+		</div>
+		</div>
+			<div id="main">
+				<div id="content">
+					<div id="box5">
+						<div id="textbox1">
+							<h4>Enough about you <b>THIS IS MY WEBSITE!!!</b> let's talk more about me,  
+						im afraid I cant tell you my house address or the combination to my bike lock but what can tell you is this...
+						My obsestion with bikes began when I had an accident on my racing bike, It was an old bike but i loved it . 
+						when I crashed I mannaged to bend the front forks by inserting my leg through them at high speed's.
+							</h4></div>
+						<div id="textbox2"><h4>
+						Im not going to lie it was Painfull. I stared riding my MTB and I soon loved the thrill of concouring obsticals on a bike!.I recently bought
+						a Downhill MTB and Because I want bigger thrills. rideing a Downhill bike is a totally diffrent feeling than an ordinary MTB.
+						</h4></div>
+						<div id="textbox3">
+							<h4>I live in Rush Co.Dublin theres a few places around I would like to challenge myself.
+							I also have a passtion for making videos even though im not the best at it I still love maing them!
+							I shoot most of my footage on an SJ5000 in my opinion its a great camera and its worth the price.
+							Im not asking for pubisity but I would like to hear your feedback on my videos, check out my youtube channel the links are at the bottom of the page!
+							</h4>
+						</div>
+						<iframe id="ytvideo2" width="600" height="350" src="http://www.youtube.com/embed/gHETXLKT0Pk" frameborder="1" allowfullscreen></iframe>
+						<div id="googleMap" style="width:45%;height:380px;">
+							</div>
+					</div>
+					<div id="footer">
+						<script>
+								function startTime() {
+									var today = new Date();
+									var h = today.getHours();
+									var m = today.getMinutes();
+									var s = today.getSeconds();
+									m = checkTime(m);
+									s = checkTime(s);
+									document.getElementById('txt').innerHTML =
+									h + ":" + m + ":" + s;
+									var t = setTimeout(startTime, 500);
+								}
+								function checkTime(i) {
+									if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+									return i;
+								}
+								</script>
+								</head>
+
+								<body onload="startTime()">
+
+								<div id="txt"></div>
+								<div id="links">
+									<div id="yt"><a href="https://www.youtube.com/channel/UCMiVAHr_DKZULv-EffzNfDw"><img src="youtube.png" alt="youtube Icon"></a></div>
+									<div id="tw"><a href="http://www.twitch.tv/xsaint1996x/profile"><img src="twitch.png" alt="twitch icon"></a></div>
+									<div id="fb"><a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook icon"></a></div>
+									<div id="twi"><a href="https://twitter.com/"><img src="twitter.png" alt="twitter icon"></a></div>
+								</div>
+							</div>		
+	</div>
+	<script>
+	</script>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+
+
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>The Saint</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script src="konami.js"></script>
+	</head>
+	<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="logobox"><img id="toplogo" src="logo.psd" alt="HTML5 Icon"><img src="saint2.psd" alt="HTML5 Icon" id="toplogo2"></div>
+				<div id="nav">
+					<table>
+					<tr>
+						<th><div id="home" onclick="location.href='index.html';" style="cursor: pointer;">Home</div></th>
+						<th><div id="gallery" onclick="location.href='gallery.html';" style="cursor: pointer;">Gallery</div></th>
+						<th><div id="about" onclick="location.href='about us.html';" style="cursor: pointer;">About Me</div></th>
+						<th><div id="contact" onclick="location.href='contact us.html';" style="cursor: pointer;">Contact Me</div></th>
+					</tr>
+					</table>
+				</div>
+		</div>
+			<div id="main">
+				<div id="content">
+					<div id="box1">
+						<div id="text1">
+							<h4>Life behind bars is amazing im obvioustly talking about Mountain biking, what do you think?.Have you ever felt compleatly free
+								MTB is my way of feeling free. I have had a few crashes and run ins with bad drivers so I reently bought a few cameras to mount the the front and rear of my bike 
+					This website is for me to post photos, videos and blogs of my biking adventures.<br>Here is my bike it is a Grossman A-250 with RockShox World Cup Downhill Front Forks 
+					and a rear Fox Shocks DHX 5.0. It might not be the best bike but I like it. Up front I have some Nukeproof warhead handle bars and lizard skin grips.
+							</h4>
+						</div>
+						<div id="pic1"><img id="gmpic" src="gmpic1.jpg" alt="bike">
+						</div>
+					</div>
+					<div id="box2">Hello
+					</div>
+					<div id="box3">
+						<div id="text2">
+							<h4>Here is one of my videos if you like it then check out my youtube channel where i have more videos
+								i may also so some painting of bike's as I usually spray bikes for friends and family i also do alot of diffrent events during the year sutch as 
+								charity trator run's and i usually meet up with friends and we go on cycles to more entertaining places and sometimes we do stupid things.so come and joinme
+								as we take over the internet (**joking) and rule the world (**not a joke).								
+							</h4>
+						</div>
+						<iframe id="ytvideo1" width="600" height="350" src="http://www.youtube.com/embed/gHETXLKT0Pk" frameborder="1" allowfullscreen></iframe>
+							
+							<div id="footer">
+							<script>
+								function startTime() {
+									var today = new Date();
+									var h = today.getHours();
+									var m = today.getMinutes();
+									var s = today.getSeconds();
+									m = checkTime(m);
+									s = checkTime(s);
+									document.getElementById('txt').innerHTML =
+									h + ":" + m + ":" + s;
+									var t = setTimeout(startTime, 500);
+								}
+								function checkTime(i) {
+									if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+									return i;
+								}
+								</script>
+								</head>
+								<body onload="startTime()">
+								<div id="txt"></div>
+								<div id="links">
+									<div id="yt"><a href="https://www.youtube.com/channel/UCMiVAHr_DKZULv-EffzNfDw"><img src="youtube.png" alt="youtube Icon"></a></div>
+									<div id="tw"><a href="http://www.twitch.tv/xsaint1996x/profile"><img src="twitch.png" alt="twitch icon"></a></div>
+									<div id="fb"><a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook icon"></a></div>
+									<div id="twi"><a href="https://twitter.com/"><img src="twitter.png" alt="twitter icon"></a></div>
+								</div>
+							</div>
+					</div>
+			</div>
+	</body>
+</html>
+<!--style color bootstrap grid navbar links in footer--><!--csstricks.com-->
